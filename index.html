@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Привет, любимая!!</title>
+    <style>
+        body {
+          background-image: url('https://flomaster.top/o/uploads/posts/2024-02/1708934050_flomaster-top-p-oboi-serdechki-krasivo-narisovannie-4.jpg');
+          background-repeat: no-repeat;
+          background-size: cover;
+          display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .button {
+            padding: 10px 20px;
+            margin: 0 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            transition: transform 0.3s; /* Добавляем плавное переходное состояние */
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div id="text-center">
+        <h1>Ты владочка?</h1>
+    </div>
+    <div class="button-container">
+        <button class="button" id="button1">Да!</button>
+        <button class="button" id="button2">Нет!</button>
+    </div>
+</div>
+
+<script>
+    a = 0
+    document.getElementById('button2').addEventListener('mouseenter', function() {
+        let randomX = 50+Math.floor(Math.random() * 100) +100;
+        let randomY = 50+Math.floor(Math.random() * 100) +100;
+        this.style.transform = `translate(${randomX}px, ${randomY}px)`;
+    });0
+    document.getElementById('button1').addEventListener('click', function() {
+        if (a == 0){
+            alert("Ты самая лучшая)))))");
+            a+=1;
+        }
+        else{
+            alert("Ты самая лучшая в мире, я тебя просто обожаю, и уважаю. В общем очень тебя люблю))) чмоки.")
+        }
+        document.getElementById('text-center').innerHTML = '<h1>Поцелуемся в губы???👉👈</h1>';
+    });
+   
+</script>
+
+</body>
+</html>
